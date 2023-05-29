@@ -1,0 +1,4 @@
+node_modules
+app/images/src/**.*
+app/images/*.png
+app/images/*.webp

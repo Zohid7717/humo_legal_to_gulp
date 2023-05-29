@@ -1,0 +1,114 @@
+.header {
+  position: absolute;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(17, 17, 17, 0.9100372570903361) 0%, rgba(255, 255, 255, 0) 94%);
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 120px;
+  }
+
+  &__burger {
+    display: none;
+  }
+
+
+  &__logo {}
+
+  &__logo_link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100px;
+    color: #4dacac;
+
+    &:hover .header__logo_title {
+      text-shadow: #FC0 1px 0 10px;
+    }
+
+    &>img {
+      height: 100%;
+    }
+  }
+
+  &__logo_content {}
+
+  &__logo_title {
+    font-family: 'Bruno Ace SC', cursive;
+    font-size: 22px;
+    transition: 0.4s ease-in-out;
+  }
+
+  &__logo_text {}
+
+  &__right {
+    flex-grow: 1;
+  }
+
+  &__menu {
+    display: flex;
+  }
+
+  &__menu_items {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    border-top: 3px solid #DBAC16;
+  }
+
+  &__menu_item {
+    width: 100%;
+
+    &:not(:last-child) {
+      border-right: 1px solid #DBAC16;
+    }
+  }
+
+  &__menu_link {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+    width: 100%;
+    transition: 0.4s ease-in-out;
+
+    &:hover {
+      color: #000;
+      background-color: #DBAC16;
+    }
+  }
+
+  &__burger_close {
+    display: none;
+  }
+
+  &__phone {
+    display: flex;
+    justify-content: end;
+    margin: 20px 0 13.5px 0;
+
+    &>a {
+      display: flex;
+      gap: 21px;
+    }
+
+    &:hover .header__phone_text {
+      color: #DBAC16;
+    }
+  }
+
+  &__phone_text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 54px;
+    color: #FFFFFF;
+    white-space: nowrap;
+    transition: 0.4s ease-in-out;
+  }
+}

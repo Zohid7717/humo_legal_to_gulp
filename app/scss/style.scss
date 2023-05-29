@@ -1,0 +1,36 @@
+@import '../../node_modules/swiper/swiper-bundle';
+
+/*------Обнуления стилей-----*/
+@import "_nullstyle";
+
+/*========подключения шрифта=======*/
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Montserrat:wght@300;400;500;700&display=swap');
+
+/*==============lib===========*/
+@import "_lib";
+
+/*------variables--------------*/
+@import "_variables";
+
+/*------header--------------*/
+@import "_header";
+
+/*------main--------------*/
+@import "_main";
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.active_menu {
+  &>a {
+    color: #000;
+    background-color: #DBAC16;
+  }
+}

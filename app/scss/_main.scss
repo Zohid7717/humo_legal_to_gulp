@@ -1,0 +1,136 @@
+.hero {
+  background-image: url(../images/hero__bg.avif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 0px 0px 0px;
+
+  &__slider_wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    margin: 370px 0px 0px 0px;
+  }
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  &__slider_item {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    padding: 0px 75px 0px 75px;
+  }
+
+  &__slider_left {
+    flex-grow: 1;
+  }
+
+  &__slider_right {
+    max-width: 617px;
+    backdrop-filter: blur(6px);
+    color: #fff;
+  }
+
+  &__slider_right_title {
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 120%;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 35px;
+  }
+
+  &__slider_right_text {
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  &__prev,
+  &__next {
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 20px;
+    transform: translate(-50%, -50%);
+    transition: 0.5s;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+  }
+
+  &__prev {
+    left: 30px;
+    background-image: url(../images/icon/arrow_left.avif);
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+
+    &:hover {
+      animation-name: move-left;
+    }
+  }
+
+  &__next {
+    right: -20px;
+    background-image: url(../images/icon/arrow_right.avif);
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+
+    &:hover {
+      animation-name: move-right;
+    }
+  }
+
+  &__phone_box {
+    display: flex;
+    align-items: end;
+  }
+
+  &__phone_bth {
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 45px;
+    color: #FFFFFF;
+    background-color: #000;
+    padding: 16px 24px;
+  }
+}
+
+@keyframes move-left {
+  0% {
+    left: 30px;
+  }
+
+  33% {
+    left: 35px;
+  }
+
+  66% {
+    left: 25px;
+  }
+
+  100% {
+    left: 30px;
+  }
+}
+
+@keyframes move-right {
+  0% {
+    right: -20px;
+  }
+
+  33% {
+    right: -15px;
+  }
+
+  66% {
+    right: -25px;
+  }
+
+  100% {
+    right: -20px;
+  }
+}
